@@ -10,7 +10,7 @@ app.use(morgan('dev'));
 app.use(cors());
 app.use('/api',userRouter);
 
-app.get('/vicky',(req,res) => res.send("hello vignesh raaj"));
+app.get('/',(req,res) => res.send("hello vignesh raaj"));
 const port=process.env.PORT || 5000;
 app.listen(port,() =>{
     console.log("localhost connected sucessfully");
