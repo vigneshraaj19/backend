@@ -9,3 +9,4 @@ const UserSchema=new mongoose.Schema({
 //sending data to the userRouter file
 const User=mongoose.model('user',UserSchema)
 module.exports = {User}
+
