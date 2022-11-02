@@ -110,7 +110,7 @@ router.post('/mailsend',validUser,async(req,res) =>{
 
 router.put('/forgetpassword',async(req,res) =>{
     try{
-        const forgotpassword=await User.findOne({email:req.body.email});
+        const forgotpassword=await User.findOne({email:req.body.forgot});
 
         if(!forgotpassword){
             return res.status(409).send({message:"given email not exist"})
