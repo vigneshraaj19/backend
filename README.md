@@ -42,6 +42,12 @@ STEP 3:
      its shows 535 error I cant able to resolve it) I have used nodemailer
 
    BUT I AM RECEIVING MAILS IN THIS (https://ethereal.email/create)
+   
+   PROOF
+   
+   ![Ethereal Email - Google Chrome 02-11-2022 23_55_35](https://user-images.githubusercontent.com/94341719/199571887-cd53280b-9381-4eb2-8b77-fc4f9e35694f.png)
+
+   
  auth: {
         user: 'keith.rippin@ethereal.email',
         pass: 'ZmXhnYAQpDWxJKXUup'
