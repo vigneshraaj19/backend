@@ -17,7 +17,7 @@ app.listen(port,() =>{
 })
 
   mongoose
-  .connect("mongodb+srv://vigneshraaj:Vignesh6139@cluster0.joqehrq.mongodb.net/?retryWrites=true&w=majority", {
+  .connect(process.env.MONGO, {
     useNewUrlParser: true,
     useUnifiedTopology: true
   })
