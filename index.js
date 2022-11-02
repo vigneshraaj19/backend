@@ -10,11 +10,20 @@ app.use(morgan('dev'));
 app.use(cors());
 app.use('/api',userRouter);
 
-app.get('/vicky',(req,res) => res.send("hello vignesh raaj"));
+
 const port=process.env.PORT || 5000;
 app.listen(port,() =>{
     console.log("localhost connected sucessfully");
 })
-mongoose.connect(process.env.DB,() =>{
-    console.log("connected to database successfully");
-});
+
+  mongoose
+  .connect("mongodb+srv://vigneshraaj:Vignesh6139@cluster0.joqehrq.mongodb.net/?retryWrites=true&w=majority", {
+    useNewUrlParser: true,
+    useUnifiedTopology: true
+  })
+  .then(() => {
+    console.log("DB Connetion Successfulls");
+  })
+  .catch((err) => {
+    console.log(err.message);
+  });
