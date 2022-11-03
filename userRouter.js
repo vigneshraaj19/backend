@@ -142,14 +142,16 @@ router.put('/forgetpassword',async(req,res) =>{
 
             const transporter = nodemailer.createTransport({
                 // service: "Gmail",
-                host: 'smtp.ethereal.email',
-                port: 587,
+                host: 'smtp.gmail.com',
+                port: 465,
+                secure: true,
                 auth: {
                     user: process.env.EMAIL,
                     pass: process.env.PASSWORD
                 }
             });
             const mailOptions = {
+                from:"vickystater1@gmail.com",
                 to: userEmail,
                 subject: "resetted password",
                 text:changepassword
