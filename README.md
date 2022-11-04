@@ -37,22 +37,8 @@ STEP 3:
    Before pushing this data we  have to put the JWT token in the headers(token got from while login) otherwise data will not be sent to the
  database error will appear
    After sending the jwt token and 3 datas. U will receive the message "thanks for emailing me"
+   And u can check the mail that u have enterted
 
-   (I have not used Gmail services so u will not get the data to the respected mail id bacause when I use gmail services
-     its shows 535 error I cant able to resolve it) I have used nodemailer
-
-   BUT I AM RECEIVING MAILS IN THIS (https://ethereal.email/create)
-   
-   PROOF
-   
-   ![Ethereal Email - Google Chrome 02-11-2022 23_55_35](https://user-images.githubusercontent.com/94341719/199571887-cd53280b-9381-4eb2-8b77-fc4f9e35694f.png)
-
-   
- auth: {
-        user: 'keith.rippin@ethereal.email',
-        pass: 'ZmXhnYAQpDWxJKXUup'
-    }
- 
    If any error comes u have not enters the details in a correct manner.
    
 IMAGES
